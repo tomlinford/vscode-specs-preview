@@ -1,0 +1,40 @@
+{
+  "name": "vscode-specs-preview",
+  "displayName": "Specs Preview",
+  "description": "A VS Code extension to preview specs folder files with real-time updates for saved and unsaved changes",
+  "version": "0.0.1",
+  "publisher": "Tom Linford",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomlinford/vscode-specs-preview.git"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:specsPreview.showPreview"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "specsPreview.showPreview",
+        "title": "Show Specs Preview"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+      "@types/vscode": "^1.85.0",
+      "eslint": "^8.56.0",
+      "typescript": "^5.3.3"
+  }
+}

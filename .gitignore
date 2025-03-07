@@ -1,0 +1,17 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# VS Code extension build artifacts
+*.vsix
+out/
+dist/
+
+# Editor and OS files
+.vscode/
+*.log
+.DS_Store
+
+# Local environment files
+.env
