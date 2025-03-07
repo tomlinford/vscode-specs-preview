@@ -6,7 +6,6 @@ yarn-error.log
 # VS Code extension build artifacts
 *.vsix
 out/
-dist/
 
 # Editor and OS files
 .vscode/
